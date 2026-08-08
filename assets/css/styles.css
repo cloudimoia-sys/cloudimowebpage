@@ -29,7 +29,8 @@ ul, ol { list-style: none; padding: 0; }
 
   --text:         #E8F0FA;
   --text-muted:   rgba(232, 240, 250, 0.62);
-  --text-faint:   rgba(232, 240, 250, 0.40);
+  /* 0.52 es el mínimo que mantiene 4.5:1 (WCAG AA) sobre --ink. No bajar. */
+  --text-faint:   rgba(232, 240, 250, 0.52);
 
   --line:         rgba(120, 170, 225, 0.16);
   --line-strong:  rgba(120, 170, 225, 0.32);
