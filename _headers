@@ -9,8 +9,18 @@
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; frame-ancestors 'none'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests
 
-/assets/*
-  Cache-Control: public, max-age=31536000, immutable
+# Imágenes de marca: cambian de nombre si cambian, se pueden cachear largo.
+/assets/brand/*
+  Cache-Control: public, max-age=604800
+
+# CSS y JS tienen nombre fijo (no hay build que les ponga hash), así que NO
+# pueden llevar 'immutable': revalidamos siempre contra el ETag. El 304 es
+# barato y garantiza que un despliegue llegue a todo el mundo al instante.
+/assets/css/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+/assets/js/*
+  Cache-Control: public, max-age=0, must-revalidate
 
 /*.html
   Cache-Control: public, max-age=0, must-revalidate
