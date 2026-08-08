@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://cloudimo.es/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cloudimo.es/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cloudimo.es/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cloudimo.es/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://cloudimo.es/en/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cloudimo.es/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cloudimo.es/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cloudimo.es/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url><loc>https://cloudimo.es/legal/aviso-legal.html</loc><priority>0.3</priority></url>
+  <url><loc>https://cloudimo.es/legal/privacidad.html</loc><priority>0.3</priority></url>
+  <url><loc>https://cloudimo.es/en/legal/legal-notice.html</loc><priority>0.2</priority></url>
+  <url><loc>https://cloudimo.es/en/legal/privacy.html</loc><priority>0.2</priority></url>
+
+</urlset>

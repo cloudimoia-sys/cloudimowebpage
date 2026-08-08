@@ -1,0 +1,16 @@
+{
+  "name": "Cloudimo — Consultoría IT e Inteligencia Artificial",
+  "short_name": "Cloudimo",
+  "description": "Software a medida, arquitectura de sistemas, DevOps, redes, automatización con IA y ciberseguridad.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#04080F",
+  "theme_color": "#04080F",
+  "lang": "es",
+  "icons": [
+    { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

@@ -1,0 +1,8 @@
+<svg width="220" height="220" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+  <rect width="220" height="220" rx="40" fill="#FFFFFF" stroke="#D8D8D8" stroke-width="2"/>
+  <g transform="translate(21,45) scale(1.9)">
+    <path d="M14,50 C5,50 0,43 1,35 C2,27 10,21 18,22 C20,10 31,1 44,1 C56,1 66,8 69,18 C82,17 94,25 94,36 C94,45 86,50 76,50 Z" fill="#0B0B0B"/>
+    <polygon points="80.00,-13.00 82.12,-6.12 89.00,-4.00 82.12,-1.88 80.00,5.00 77.88,-1.88 71.00,-4.00 77.88,-6.12" fill="#0B0B0B"/>
+  </g>
+  <text x="110" y="178" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="500" fill="#0B0B0B">cloudimo</text>
+</svg>
