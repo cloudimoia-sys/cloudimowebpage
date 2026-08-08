@@ -49,24 +49,22 @@ Luego abre <http://localhost:4321>. No hace falta instalar nada: usa sólo Node.
    `sitemap.xml`, `robots.txt` y las etiquetas `canonical` / `og:url` / `hreflang` de
    cada página.
 
-## Publicar en Cloudflare Pages
+## Publicar en Cloudflare (Workers con assets estáticos)
 
-```bash
-git init && git add -A && git commit -m "Sitio web de Cloudimo"
-```
+Las cuentas nuevas de Cloudflare ya no muestran "Pages" como opción separada: el
+sitio se publica como un Worker de solo-assets, que es gratuito y funciona igual
+que Pages (mismo CDN, mismo soporte de `_headers` y 404 personalizada).
+`wrangler.toml` ya está configurado para esto (`[assets] directory = "."`).
 
-Después crea un repositorio en GitHub, súbelo, y en el panel de Cloudflare:
-**Workers & Pages → Create → Pages → Connect to Git**.
-
-Configuración del proyecto:
+En **Workers & Pages → Create application → Import a repository**, conecta el
+repo de GitHub y usa:
 
 | Campo | Valor |
 |---|---|
-| Framework preset | None |
 | Build command | *(vacío)* |
-| Build output directory | `/` |
+| Deploy command | `npx wrangler deploy` |
 
-Cada `git push` vuelve a desplegar automáticamente.
+Cada `git push` a `main` vuelve a desplegar automáticamente.
 
 ## Editar el contenido
 
