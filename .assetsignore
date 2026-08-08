@@ -1,7 +1,10 @@
+.git
+.wrangler
 .dev
 .claude
-.git
 .gitignore
 .assetsignore
 wrangler.toml
+wrangler.jsonc
 README.md
+node_modules
